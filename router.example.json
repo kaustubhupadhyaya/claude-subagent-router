@@ -1,0 +1,41 @@
+{
+  "port": 3457,
+  "aliases": {
+    "subagent": "ag/gemini-3-flash"
+  },
+  "antigravity": {
+    "url": "${ANTIGRAVITY_URL:-http://127.0.0.1:8080}"
+  },
+  "authFile": "${OPENCODE_AUTH_FILE:-~/.local/share/opencode/auth.json}",
+  "providers": {
+    "zen": {
+      "url": "https://opencode.ai/zen/v1",
+      "authKey": "opencode",
+      "anthropicFormat": [
+        "claude-*",
+        "qwen*"
+      ],
+      "unsupported": [
+        "gpt-*",
+        "grok-*",
+        "muse-*",
+        "gemini-*",
+        "jev-*"
+      ]
+    },
+    "go": {
+      "url": "https://opencode.ai/zen/go/v1",
+      "authKey": "opencode-go",
+      "anthropicFormat": [
+        "minimax-*",
+        "qwen*"
+      ],
+      "unsupported": [
+        "gpt-*",
+        "grok-*",
+        "muse-*"
+      ]
+    }
+  },
+  "logShapes": false
+}

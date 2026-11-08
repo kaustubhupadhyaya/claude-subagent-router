@@ -1,0 +1,11 @@
+# Local configuration and runtime output
+router.json
+router.log
+router.log.old
+*.log
+capture*.json
+*.capture.json
+
+# Node
+node_modules/
+npm-debug.log*
